@@ -1,0 +1,31 @@
+{
+    "appKeys": {
+        "KEY_LOCATION": 0,
+        "KEY_TEMPERATURE": 1
+    },
+    "capabilities": [
+        "location",
+        "configurable"
+    ],
+    "companyName": "Adrian Chifor",
+    "longName": "Authentic Weather",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/aweather.png",
+                "menuIcon": true,
+                "name": "A_WEATHER_ICON",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "2",
+    "shortName": "AWeather",
+    "uuid": "0f95c9aa-273c-4ec3-bca7-9ed509d094bc",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
