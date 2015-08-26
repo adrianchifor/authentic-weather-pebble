@@ -7,7 +7,7 @@ static Window *window;
 static TextLayer *timeText;
 static TextLayer *location;
 static TextLayer *temperature;
-static TextLayer *fuckingText;
+static TextLayer *flippinText;
 static TextLayer *statusText;
 
 static void updateTime() {
@@ -46,12 +46,12 @@ static void loadWindow(Window *window) {
     text_layer_set_text_alignment(temperature, GTextAlignmentCenter);
     text_layer_set_text(temperature, "--\u00B0C");
 
-    fuckingText = text_layer_create(GRect(0, 104, 144, 35));
-    text_layer_set_background_color(fuckingText, GColorBlack);
-    text_layer_set_text_color(fuckingText, GColorWhite);
-    text_layer_set_font(fuckingText, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
-    text_layer_set_text_alignment(fuckingText, GTextAlignmentCenter);
-    text_layer_set_text(fuckingText, "IT'S FUCKING");
+    flippinText = text_layer_create(GRect(0, 104, 144, 35));
+    text_layer_set_background_color(flippinText, GColorBlack);
+    text_layer_set_text_color(flippinText, GColorWhite);
+    text_layer_set_font(flippinText, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
+    text_layer_set_text_alignment(flippinText, GTextAlignmentCenter);
+    text_layer_set_text(flippinText, "IT'S FUCKING");
 
     statusText = text_layer_create(GRect(0, 133, 144, 35));
     text_layer_set_background_color(statusText, GColorBlack);
@@ -63,7 +63,7 @@ static void loadWindow(Window *window) {
     layer_add_child(window_get_root_layer(window), text_layer_get_layer(timeText));
     layer_add_child(window_get_root_layer(window), text_layer_get_layer(location));
     layer_add_child(window_get_root_layer(window), text_layer_get_layer(temperature));
-    layer_add_child(window_get_root_layer(window), text_layer_get_layer(fuckingText));
+    layer_add_child(window_get_root_layer(window), text_layer_get_layer(flippinText));
     layer_add_child(window_get_root_layer(window), text_layer_get_layer(statusText));
 }
 
@@ -71,7 +71,7 @@ static void unloadWindow(Window *window) {
     text_layer_destroy(timeText);
     text_layer_destroy(location);
     text_layer_destroy(temperature);
-    text_layer_destroy(fuckingText);
+    text_layer_destroy(flippinText);
     text_layer_destroy(statusText);
 }
 
